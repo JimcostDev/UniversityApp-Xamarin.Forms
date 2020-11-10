@@ -1,0 +1,8 @@
+--University API
+university-api.azurewebsites.net/swagger
+
+--Football API
+https://www.football-data.org/documentation/quickstart
+
+*************Extensiones necesarias (NuGets)***************
+--Newtonsoft.Json --> UniversityApp.BL
