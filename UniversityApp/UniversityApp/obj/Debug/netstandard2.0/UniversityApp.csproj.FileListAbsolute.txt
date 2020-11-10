@@ -1,0 +1,7 @@
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Utap\Semestre_V\POO_II\UniversityApp-Xamarin.Forms\UniversityApp\UniversityApp\bin\Debug\netstandard2.0\UniversityApp.deps.json
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Utap\Semestre_V\POO_II\UniversityApp-Xamarin.Forms\UniversityApp\UniversityApp\bin\Debug\netstandard2.0\UniversityApp.dll
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Utap\Semestre_V\POO_II\UniversityApp-Xamarin.Forms\UniversityApp\UniversityApp\obj\Debug\netstandard2.0\UniversityApp.csprojAssemblyReference.cache
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Utap\Semestre_V\POO_II\UniversityApp-Xamarin.Forms\UniversityApp\UniversityApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Utap\Semestre_V\POO_II\UniversityApp-Xamarin.Forms\UniversityApp\UniversityApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Utap\Semestre_V\POO_II\UniversityApp-Xamarin.Forms\UniversityApp\UniversityApp\obj\Debug\netstandard2.0\UniversityApp.AssemblyInfoInputs.cache
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Utap\Semestre_V\POO_II\UniversityApp-Xamarin.Forms\UniversityApp\UniversityApp\obj\Debug\netstandard2.0\UniversityApp.AssemblyInfo.cs

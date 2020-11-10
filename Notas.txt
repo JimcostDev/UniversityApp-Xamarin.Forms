@@ -6,3 +6,4 @@ https://www.football-data.org/documentation/quickstart
 
 *************Extensiones necesarias (NuGets)***************
 --Newtonsoft.Json --> UniversityApp.BL
+--Plugin.Connectivity --Todos los proyectos
