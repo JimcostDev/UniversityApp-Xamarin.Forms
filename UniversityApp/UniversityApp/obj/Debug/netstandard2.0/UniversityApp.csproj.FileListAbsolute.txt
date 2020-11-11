@@ -5,3 +5,6 @@ C:\Users\Ronaldo Jimenez\Desktop\Cursos\Utap\Semestre_V\POO_II\UniversityApp-Xam
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Utap\Semestre_V\POO_II\UniversityApp-Xamarin.Forms\UniversityApp\UniversityApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Utap\Semestre_V\POO_II\UniversityApp-Xamarin.Forms\UniversityApp\UniversityApp\obj\Debug\netstandard2.0\UniversityApp.AssemblyInfoInputs.cache
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Utap\Semestre_V\POO_II\UniversityApp-Xamarin.Forms\UniversityApp\UniversityApp\obj\Debug\netstandard2.0\UniversityApp.AssemblyInfo.cs
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Utap\Semestre_V\POO_II\UniversityApp-Xamarin.Forms\UniversityApp\UniversityApp\obj\Debug\netstandard2.0\Views\CourseInstructorsPage.xaml.g.cs
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Utap\Semestre_V\POO_II\UniversityApp-Xamarin.Forms\UniversityApp\UniversityApp\obj\Debug\netstandard2.0\Views\CoursePage.xaml.g.cs
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Utap\Semestre_V\POO_II\UniversityApp-Xamarin.Forms\UniversityApp\UniversityApp\obj\Debug\netstandard2.0\UniversityApp.csproj.CoreCompileInputs.cache

@@ -799,6 +799,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "UniversityApp.BL": "1.0.0",
           "Xam.Plugin.Connectivity": "3.2.0",
           "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.6.0.1141"
@@ -808,6 +809,15 @@
         },
         "runtime": {
           "bin/placeholder/UniversityApp.dll": {}
+        }
+      },
+      "UniversityApp.BL/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/UniversityApp.BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UniversityApp.BL.dll": {}
         }
       }
     }
@@ -1999,6 +2009,11 @@
       "type": "project",
       "path": "../UniversityApp/UniversityApp.csproj",
       "msbuildProject": "../UniversityApp/UniversityApp.csproj"
+    },
+    "UniversityApp.BL/1.0.0": {
+      "type": "project",
+      "path": "../../UniversityApp.BL/UniversityApp.BL.csproj",
+      "msbuildProject": "../../UniversityApp.BL/UniversityApp.BL.csproj"
     }
   },
   "projectFileDependencyGroups": {

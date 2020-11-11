@@ -77,6 +77,15 @@
           "buildTransitive/Xamarin.Forms.props": {},
           "buildTransitive/Xamarin.Forms.targets": {}
         }
+      },
+      "UniversityApp.BL/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/UniversityApp.BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UniversityApp.BL.dll": {}
+        }
       }
     }
   },
@@ -699,11 +708,17 @@
         "xamarin.forms.4.6.0.1141.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
+    },
+    "UniversityApp.BL/1.0.0": {
+      "type": "project",
+      "path": "../../UniversityApp.BL/UniversityApp.BL.csproj",
+      "msbuildProject": "../../UniversityApp.BL/UniversityApp.BL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
+      "UniversityApp.BL >= 1.0.0",
       "Xam.Plugin.Connectivity >= 3.2.0",
       "Xamarin.Essentials >= 1.5.3.2",
       "Xamarin.Forms >= 4.6.0.1141"
@@ -739,7 +754,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Utap\\Semestre_V\\POO_II\\UniversityApp-Xamarin.Forms\\UniversityApp.BL\\UniversityApp.BL.csproj": {
+              "projectPath": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Utap\\Semestre_V\\POO_II\\UniversityApp-Xamarin.Forms\\UniversityApp.BL\\UniversityApp.BL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

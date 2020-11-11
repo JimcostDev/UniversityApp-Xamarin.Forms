@@ -4,6 +4,16 @@
     "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Utap\\Semestre_V\\POO_II\\UniversityApp-Xamarin.Forms\\UniversityApp\\UniversityApp.iOS\\UniversityApp.iOS.csproj": {}
   },
   "projects": {
+    "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Utap\\Semestre_V\\POO_II\\UniversityApp-Xamarin.Forms\\UniversityApp.BL\\UniversityApp.BL.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Utap\\Semestre_V\\POO_II\\UniversityApp-Xamarin.Forms\\UniversityApp.BL\\UniversityApp.BL.csproj",
+        "projectName": "UniversityApp.BL",
+        "projectPath": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Utap\\Semestre_V\\POO_II\\UniversityApp-Xamarin.Forms\\UniversityApp.BL\\UniversityApp.BL.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
     "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Utap\\Semestre_V\\POO_II\\UniversityApp-Xamarin.Forms\\UniversityApp\\UniversityApp.iOS\\UniversityApp.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -95,7 +105,11 @@
         },
         "frameworks": {
           "netstandard2.0": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Utap\\Semestre_V\\POO_II\\UniversityApp-Xamarin.Forms\\UniversityApp.BL\\UniversityApp.BL.csproj": {
+                "projectPath": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Utap\\Semestre_V\\POO_II\\UniversityApp-Xamarin.Forms\\UniversityApp.BL\\UniversityApp.BL.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

@@ -1,0 +1,2 @@
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Utap\Semestre_V\POO_II\UniversityApp-Xamarin.Forms\UniversityApp.BL\obj\Debug\UniversityApp.BL.csprojAssemblyReference.cache
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Utap\Semestre_V\POO_II\UniversityApp-Xamarin.Forms\UniversityApp.BL\obj\Debug\UniversityApp.BL.csproj.CoreCompileInputs.cache

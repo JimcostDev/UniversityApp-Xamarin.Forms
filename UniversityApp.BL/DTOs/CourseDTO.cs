@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace UniversityApp.BL.DTOs
 {
-    class CourseDTO
+    public class CourseDTO
     {
         [JsonProperty("CourseID")]
         public long CourseID { get; set; }
