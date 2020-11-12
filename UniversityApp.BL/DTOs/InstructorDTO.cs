@@ -13,6 +13,12 @@ namespace UniversityApp.BL.DTOs
         public string LastName { get; set; }
         public string FirstMidName { get; set; }
         public DateTime HireDate { get; set; }
-        public string FullName { get; set; }
+        public string FullName
+        {
+            get
+            {
+                return string.Format("{0} {1}", LastName, FirstMidName);
+            }
+        }
     }
 }

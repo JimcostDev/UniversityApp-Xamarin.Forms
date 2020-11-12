@@ -4,6 +4,10 @@ university-api.azurewebsites.net/swagger
 --Football API
 https://www.football-data.org/documentation/quickstart
 
+--OMDb API 
+http://www.omdbapi.com/?i=tt3896198&apikey=4957a6b1
+key: 4957a6b1
+
 *************Extensiones necesarias (NuGets)***************
 --Newtonsoft.Json --> UniversityApp.BL
 --Plugin.Connectivity --Todos los proyectos
