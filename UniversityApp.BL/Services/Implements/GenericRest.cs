@@ -31,7 +31,11 @@ namespace UniversityApp.BL.Services.Implements
 
         public async Task<TEntity> GetById(string url, int id)
         {
-            HttpResponseMessage response = await RestClientSingleton.Instance().GetAsync(url + id);
+            string requestUri = url;
+            if (id != 0)
+                requestUri += id;
+
+            HttpResponseMessage response = await RestClientSingleton.Instance().GetAsync(requestUri);
             string responseText = await response.Content.ReadAsStringAsync();
 
             response.Dispose();

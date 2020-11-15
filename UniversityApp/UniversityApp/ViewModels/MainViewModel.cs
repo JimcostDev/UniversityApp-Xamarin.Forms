@@ -1,18 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace UniversityApp.ViewModels
+﻿namespace UniversityApp.ViewModels
 {
     public class MainViewModel
     {
         public CourseViewModel Courses { get; set; }
         public CourseInstructorsViewModel CourseInstructors { get; set; }
+        public MoviesViewModel Movies { get; set; }
 
         public MainViewModel()
         {
-            Courses = new CourseViewModel();
-            CourseInstructors = new CourseInstructorsViewModel();
+            //Courses = new CoursesViewModel();
+            //CourseInstructors = new CourseInstructorsViewModel();
+            Movies = new MoviesViewModel();
         }
     }
 }
