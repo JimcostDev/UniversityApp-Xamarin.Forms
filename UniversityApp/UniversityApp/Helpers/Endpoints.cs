@@ -29,8 +29,17 @@ namespace UniversityApp.Helpers
         #region Departments
         public static string GET_DEPARTMENTS = "/api/Departments/";
         #endregion
+
         #region Instructors
-        public static string GET_INSTRUCTORS = "/api/Instructors/GetInstructors";
+        public static string GET_INSTRUCTORS = "/api/Instructors/GetInstructors/";
+        #endregion
+
+        #region Enrollments
+        public static string GET_ENROLLMENTS = "/api/Enrollments/";
+        #endregion
+
+        #region OfficeAssignments
+        public static string GET_OFFICE_ASSIGNMENTS = "/api/OfficeAssignments/";
         #endregion
     }
 }

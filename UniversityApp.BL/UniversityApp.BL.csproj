@@ -53,24 +53,30 @@
     <Compile Include="DTOs\CourseDTO.cs" />
     <Compile Include="DTOs\CourseInstructorDTO.cs" />
     <Compile Include="DTOs\DepartmentDTO.cs" />
+    <Compile Include="DTOs\EnrollmentDTO.cs" />
     <Compile Include="DTOs\InstructorDTO.cs" />
     <Compile Include="DTOs\MovieDTO.cs" />
+    <Compile Include="DTOs\OfficeAssignmentDTO.cs" />
     <Compile Include="DTOs\StudentDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ICourseInstructorService.cs" />
     <Compile Include="Services\ICourseService.cs" />
     <Compile Include="Services\IDepartmentService.cs" />
+    <Compile Include="Services\IEnrollmentService.cs" />
     <Compile Include="Services\IGenericRest.cs" />
     <Compile Include="Services\IInstructorService.cs" />
     <Compile Include="Services\IMovieService.cs" />
     <Compile Include="Services\Implements\CourseInstructorService.cs" />
     <Compile Include="Services\Implements\CourseService.cs" />
     <Compile Include="Services\Implements\DepartmentService.cs" />
+    <Compile Include="Services\Implements\EnrollmentService.cs" />
     <Compile Include="Services\Implements\GenericRest.cs" />
     <Compile Include="Services\Implements\InstructorService.cs" />
     <Compile Include="Services\Implements\MovieService.cs" />
+    <Compile Include="Services\Implements\OfficeAssignmentService.cs" />
     <Compile Include="Services\Implements\RestClientSingleton.cs" />
     <Compile Include="Services\Implements\StudentService.cs" />
+    <Compile Include="Services\IOfficeAssignmentService.cs" />
     <Compile Include="Services\IStudentService.cs" />
   </ItemGroup>
   <ItemGroup />

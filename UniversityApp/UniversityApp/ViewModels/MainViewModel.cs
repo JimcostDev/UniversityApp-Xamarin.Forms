@@ -8,6 +8,8 @@
         public StudentsViewModel Students { get; set; }
         public DepartmentsViewModel Departments { get; set; }
         public InstructorViewModel Instructors { get; set; }
+        public EnrollmentViewModel Enrollments { get; set; }
+        public OfficeAssignmentViewModel OfficeAssignments { get; set; }
 
         public MainViewModel()
         {
@@ -16,6 +18,8 @@
             Students = new StudentsViewModel();
             Departments = new DepartmentsViewModel();
             Instructors = new InstructorViewModel();
+            Enrollments = new EnrollmentViewModel();
+            OfficeAssignments = new OfficeAssignmentViewModel();
             //Movies = new MoviesViewModel();
 
         }
