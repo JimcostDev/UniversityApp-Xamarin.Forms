@@ -23,8 +23,14 @@ namespace UniversityApp.Helpers
         #endregion
 
         #region Students
-        public static string GET_STUDENTS = "/api/Students/GetStudents"; 
+        public static string GET_STUDENTS = "/api/Students/GetStudents/";
         #endregion
 
+        #region Departments
+        public static string GET_DEPARTMENTS = "/api/Departments/";
+        #endregion
+        #region Instructors
+        public static string GET_INSTRUCTORS = "/api/Instructors/GetInstructors";
+        #endregion
     }
 }
