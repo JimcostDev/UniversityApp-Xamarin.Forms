@@ -54,6 +54,7 @@
     <Compile Include="DTOs\CourseInstructorDTO.cs" />
     <Compile Include="DTOs\InstructorDTO.cs" />
     <Compile Include="DTOs\MovieDTO.cs" />
+    <Compile Include="DTOs\StudentDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ICourseInstructorService.cs" />
     <Compile Include="Services\ICourseService.cs" />
@@ -64,6 +65,8 @@
     <Compile Include="Services\Implements\GenericRest.cs" />
     <Compile Include="Services\Implements\MovieService.cs" />
     <Compile Include="Services\Implements\RestClientSingleton.cs" />
+    <Compile Include="Services\Implements\StudentService.cs" />
+    <Compile Include="Services\IStudentService.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

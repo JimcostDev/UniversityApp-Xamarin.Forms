@@ -11,7 +11,7 @@ namespace UniversityApp
         {
             InitializeComponent();
 
-            MainPage = new MoviesPage();
+            MainPage = new StudentsPage();
         }
 
         protected override void OnStart()

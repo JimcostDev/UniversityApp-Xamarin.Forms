@@ -17,6 +17,14 @@ namespace UniversityApp.Helpers
         public static string PUT_COURSES = "api/Courses/";
         public static string DELETE_COURSES = "api/Courses/";
         #endregion
+
+        #region CourseInstructors
         public static string GET_COURSE_INSTRUCTORS = "/api/CourseInstructors/";
+        #endregion
+
+        #region Students
+        public static string GET_STUDENTS = "/api/Students/GetStudents"; 
+        #endregion
+
     }
 }

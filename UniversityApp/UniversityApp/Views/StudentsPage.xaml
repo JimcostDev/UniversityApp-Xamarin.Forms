@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="UniversityApp.Views.CourseInstructorsPage"
-             BindingContext="{Binding Main, Source={StaticResource Locator}}">
+             x:Class="UniversityApp.Views.StudentsPage"
+              BindingContext="{Binding Main, Source={StaticResource Locator}}">
     <ContentPage.Content>
-        <StackLayout BindingContext="{Binding CourseInstructors}" Padding="20">
-            <ListView ItemsSource="{Binding CourseInstructors}" 
+        <StackLayout BindingContext="{Binding Students}" Padding="20">
+            <ListView ItemsSource="{Binding Students}" 
                       HasUnevenRows="True"
                       IsPullToRefreshEnabled="True"
                       IsRefreshing="{Binding IsRefreshing}"
@@ -18,8 +18,8 @@
                                     <ColumnDefinition Width="2*"></ColumnDefinition>
                                     <ColumnDefinition Width="*"></ColumnDefinition>
                                 </Grid.ColumnDefinitions>
-                                <Label Grid.Column="0" Text="{Binding Course.Title }"></Label>
-                                <Label Grid.Column="1" Text="{Binding Instructor.LastName }"></Label>
+                                <Label Grid.Column="0" Text="{Binding LastName }"></Label>
+                                <Label Grid.Column="1" Text="{Binding FirstMidName }"></Label>
                             </Grid>
                         </ViewCell>
                     </DataTemplate>

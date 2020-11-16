@@ -16,8 +16,8 @@ namespace UniversityApp.BL.Services.Implements
             {
                 client = new HttpClient
                 {
-                    //BaseAddress = new Uri("http://university-api.azurewebsites.net/")
-                    BaseAddress = new Uri("http://www.omdbapi.com/")
+                    BaseAddress = new Uri("http://university-api.azurewebsites.net/")
+                    //BaseAddress = new Uri("http://www.omdbapi.com/")
                 };
 
                 client.DefaultRequestHeaders.Accept.Clear();
