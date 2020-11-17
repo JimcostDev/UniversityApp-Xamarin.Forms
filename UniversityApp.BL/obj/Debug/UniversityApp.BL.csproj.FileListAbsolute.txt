@@ -13,3 +13,18 @@ C:\Users\Ronaldo Jimenez\Desktop\Cursos\Utap\Semestre_V\POO_II\UniversityApp-Xam
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Utap\Semestre_V\POO_II\UniversityApp-Xamarin.Forms\UniversityApp.BL\obj\Debug\UniversityApp.BL.csproj.CopyComplete
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Utap\Semestre_V\POO_II\UniversityApp-Xamarin.Forms\UniversityApp.BL\obj\Debug\UniversityApp.BL.dll
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Utap\Semestre_V\POO_II\UniversityApp-Xamarin.Forms\UniversityApp.BL\obj\Debug\UniversityApp.BL.pdb
+C:\workspace-xamarin\UniversityApp-Xamarin.Forms\UniversityApp.BL\bin\Debug\UniversityApp.BL.dll
+C:\workspace-xamarin\UniversityApp-Xamarin.Forms\UniversityApp.BL\bin\Debug\UniversityApp.BL.pdb
+C:\workspace-xamarin\UniversityApp-Xamarin.Forms\UniversityApp.BL\bin\Debug\Newtonsoft.Json.dll
+C:\workspace-xamarin\UniversityApp-Xamarin.Forms\UniversityApp.BL\bin\Debug\Plugin.Connectivity.Abstractions.dll
+C:\workspace-xamarin\UniversityApp-Xamarin.Forms\UniversityApp.BL\bin\Debug\Plugin.Connectivity.dll
+C:\workspace-xamarin\UniversityApp-Xamarin.Forms\UniversityApp.BL\bin\Debug\Newtonsoft.Json.xml
+C:\workspace-xamarin\UniversityApp-Xamarin.Forms\UniversityApp.BL\bin\Debug\Plugin.Connectivity.pdb
+C:\workspace-xamarin\UniversityApp-Xamarin.Forms\UniversityApp.BL\bin\Debug\Plugin.Connectivity.xml
+C:\workspace-xamarin\UniversityApp-Xamarin.Forms\UniversityApp.BL\bin\Debug\Plugin.Connectivity.Abstractions.pdb
+C:\workspace-xamarin\UniversityApp-Xamarin.Forms\UniversityApp.BL\bin\Debug\Plugin.Connectivity.Abstractions.xml
+C:\workspace-xamarin\UniversityApp-Xamarin.Forms\UniversityApp.BL\obj\Debug\UniversityApp.BL.csprojAssemblyReference.cache
+C:\workspace-xamarin\UniversityApp-Xamarin.Forms\UniversityApp.BL\obj\Debug\UniversityApp.BL.csproj.CoreCompileInputs.cache
+C:\workspace-xamarin\UniversityApp-Xamarin.Forms\UniversityApp.BL\obj\Debug\UniversityApp.BL.csproj.CopyComplete
+C:\workspace-xamarin\UniversityApp-Xamarin.Forms\UniversityApp.BL\obj\Debug\UniversityApp.BL.dll
+C:\workspace-xamarin\UniversityApp-Xamarin.Forms\UniversityApp.BL\obj\Debug\UniversityApp.BL.pdb

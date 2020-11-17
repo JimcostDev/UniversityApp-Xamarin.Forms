@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rwsweee82MDoQhKGXFEZJYxMPy1OGEeKW7HW5knOaWKcadz6gqC3L5PBCveoSTohPGX6cu5VkqVnvhPctQhVPw==",
+  "dgSpecHash": "YLuFCmRQ0tJdaVVbdNpkm3wXGjA7oXg8Wpo08Wf/hb5A5fEBA2Bjf+t6PPZK9acHouPsyNk2ww7rzPy2/mRxqg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Utap\\Semestre_V\\POO_II\\UniversityApp-Xamarin.Forms\\UniversityApp\\UniversityApp\\UniversityApp.csproj",
+  "projectFilePath": "C:\\workspace-xamarin\\UniversityApp-Xamarin.Forms\\UniversityApp\\UniversityApp\\UniversityApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ronaldo Jimenez\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Ronaldo Jimenez\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

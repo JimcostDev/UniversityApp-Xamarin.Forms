@@ -13,13 +13,13 @@ namespace UniversityApp.ViewModels
     public class StudentsViewModel : BaseViewModel
     {
         private BL.Services.IStudentService studentService;
-        private ObservableCollection<StudentDTO> student;
+        private ObservableCollection<StudentDTO> students;
         private bool isRefreshing;
 
-        public ObservableCollection<StudentDTO> Student
+        public ObservableCollection<StudentDTO> Students
         {
-            get { return this.student; }
-            set { this.SetValue(ref this.student, value); }
+            get { return this.students; }
+            set { this.SetValue(ref this.students, value); }
         }
 
         public bool IsRefreshing
@@ -52,7 +52,7 @@ namespace UniversityApp.ViewModels
                 }
 
                 var listStudents = await studentService.GetAll(Endpoints.GET_STUDENTS);
-                this.Student = new ObservableCollection<StudentDTO>(listStudents);
+                this.Students = new ObservableCollection<StudentDTO>(listStudents);
                 this.IsRefreshing = false;
             }
             catch (Exception ex)

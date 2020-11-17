@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kl5ZPEudQs0VOTjdGhmFfpB6ktSqM2PFDpZa2wa7KjoSEfCpyVeXE+i0MIu9x8JnnkQJAtVwvBZzQ6lFdexOGA==",
+  "dgSpecHash": "MtmkeoJQX7MievOeiTrLB1czejAlRcNcY5wSBVi00AqsHjwmtZ1Z/KvMQ/x0bAFXzMT2MyxwRwSr0jXmjMAupQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Utap\\Semestre_V\\POO_II\\UniversityApp-Xamarin.Forms\\UniversityApp\\UniversityApp.iOS\\UniversityApp.iOS.csproj",
+  "projectFilePath": "C:\\workspace-xamarin\\UniversityApp-Xamarin.Forms\\UniversityApp\\UniversityApp.iOS\\UniversityApp.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ronaldo Jimenez\\.nuget\\packages\\xam.plugin.connectivity\\3.2.0\\xam.plugin.connectivity.3.2.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",

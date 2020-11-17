@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "48B0MTcPusNs9vqMBuQO25bauTtlE7MGWEAe/2PQL180qyfMOhi+mBXsc7jiKRe6RuchJLYkF42MYtzZU6X+oQ==",
+  "dgSpecHash": "aLK6Ps+uSQNEMLWNOrIAgQa4quJ8iP7feQQjnfhm67JjfN1iEYusW7X+99ir3ZvqHjRfxAknpk62O4sTjTmJQg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Utap\\Semestre_V\\POO_II\\UniversityApp-Xamarin.Forms\\UniversityApp\\UniversityApp.Android\\UniversityApp.Android.csproj",
+  "projectFilePath": "C:\\workspace-xamarin\\UniversityApp-Xamarin.Forms\\UniversityApp\\UniversityApp.Android\\UniversityApp.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ronaldo Jimenez\\.nuget\\packages\\xam.plugin.connectivity\\3.2.0\\xam.plugin.connectivity.3.2.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.common\\1.1.1.3\\xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",

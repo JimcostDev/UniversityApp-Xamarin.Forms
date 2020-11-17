@@ -733,11 +733,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Utap\\Semestre_V\\POO_II\\UniversityApp-Xamarin.Forms\\UniversityApp\\UniversityApp\\UniversityApp.csproj",
+      "projectUniqueName": "C:\\workspace-xamarin\\UniversityApp-Xamarin.Forms\\UniversityApp\\UniversityApp\\UniversityApp.csproj",
       "projectName": "UniversityApp",
-      "projectPath": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Utap\\Semestre_V\\POO_II\\UniversityApp-Xamarin.Forms\\UniversityApp\\UniversityApp\\UniversityApp.csproj",
+      "projectPath": "C:\\workspace-xamarin\\UniversityApp-Xamarin.Forms\\UniversityApp\\UniversityApp\\UniversityApp.csproj",
       "packagesPath": "C:\\Users\\Ronaldo Jimenez\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Utap\\Semestre_V\\POO_II\\UniversityApp-Xamarin.Forms\\UniversityApp\\UniversityApp\\obj\\",
+      "outputPath": "C:\\workspace-xamarin\\UniversityApp-Xamarin.Forms\\UniversityApp\\UniversityApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -757,8 +757,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Utap\\Semestre_V\\POO_II\\UniversityApp-Xamarin.Forms\\UniversityApp.BL\\UniversityApp.BL.csproj": {
-              "projectPath": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Utap\\Semestre_V\\POO_II\\UniversityApp-Xamarin.Forms\\UniversityApp.BL\\UniversityApp.BL.csproj"
+            "C:\\workspace-xamarin\\UniversityApp-Xamarin.Forms\\UniversityApp.BL\\UniversityApp.BL.csproj": {
+              "projectPath": "C:\\workspace-xamarin\\UniversityApp-Xamarin.Forms\\UniversityApp.BL\\UniversityApp.BL.csproj"
             }
           }
         }
