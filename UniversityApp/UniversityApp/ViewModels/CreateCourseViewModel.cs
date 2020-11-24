@@ -90,7 +90,9 @@ namespace UniversityApp.ViewModels
                 this.CourseID = this.Credits = 0;
                 this.Title = string.Empty;
 
-                Application.Current.MainPage = new NavigationPage(new CoursePage());
+                //Application.Current.MainPage = new NavigationPage(new CoursePage());
+                //var enrollmentDate = DateTime.UtcNow;
+                //this.EnrollmentDate = DateTime.UtcNow;
             }
             catch (Exception ex)
             {

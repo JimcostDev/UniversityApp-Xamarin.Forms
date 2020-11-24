@@ -11,6 +11,7 @@
         public EnrollmentViewModel Enrollments { get; set; }
         public OfficeAssignmentViewModel OfficeAssignments { get; set; }
         public CreateCourseViewModel CreateCourse { get; set; }
+        public CreateStudentViewModel CreateStudent { get; set; }
 
         public MainViewModel()
         {
@@ -22,6 +23,7 @@
             Enrollments = new EnrollmentViewModel();
             OfficeAssignments = new OfficeAssignmentViewModel();
             CreateCourse = new CreateCourseViewModel();
+            CreateStudent = new CreateStudentViewModel(); 
 
 
             //Movies = new MoviesViewModel();

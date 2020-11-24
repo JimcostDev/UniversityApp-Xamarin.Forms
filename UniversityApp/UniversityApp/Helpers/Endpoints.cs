@@ -24,6 +24,7 @@ namespace UniversityApp.Helpers
 
         #region Students
         public static string GET_STUDENTS = "/api/Students/GetStudents/";
+        public static string POST_STUDENTS = "/api/Students/";
         #endregion
 
         #region Departments
