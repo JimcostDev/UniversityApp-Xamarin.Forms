@@ -24,6 +24,12 @@
     <ProjectReference Include="..\..\UniversityApp.BL\UniversityApp.BL.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EmbeddedResource Update="Views\CreateCoursePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
   
 
   <ItemGroup>

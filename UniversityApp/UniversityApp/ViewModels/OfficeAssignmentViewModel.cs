@@ -16,7 +16,7 @@ namespace UniversityApp.ViewModels
         private ObservableCollection<OfficeAssignmentDTO> officeAssignments;
         private bool isRefreshing;
 
-        public ObservableCollection<OfficeAssignmentDTO> Instructors
+        public ObservableCollection<OfficeAssignmentDTO> OfficeAssignments
         {
             get { return this.officeAssignments; }
             set { this.SetValue(ref this.officeAssignments, value); }
@@ -52,7 +52,7 @@ namespace UniversityApp.ViewModels
                 }
 
                 var listOfficeAssignments = await officeAssignmentService.GetAll(Endpoints.GET_OFFICE_ASSIGNMENTS);
-                this.Instructors = new ObservableCollection<OfficeAssignmentDTO>(listOfficeAssignments);
+                this.OfficeAssignments = new ObservableCollection<OfficeAssignmentDTO>(listOfficeAssignments);
                 this.IsRefreshing = false;
             }
             catch (Exception ex)

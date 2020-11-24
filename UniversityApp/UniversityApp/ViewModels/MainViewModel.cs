@@ -10,6 +10,7 @@
         public InstructorViewModel Instructors { get; set; }
         public EnrollmentViewModel Enrollments { get; set; }
         public OfficeAssignmentViewModel OfficeAssignments { get; set; }
+        public CreateCourseViewModel CreateCourse { get; set; }
 
         public MainViewModel()
         {
@@ -20,8 +21,11 @@
             Instructors = new InstructorViewModel();
             Enrollments = new EnrollmentViewModel();
             OfficeAssignments = new OfficeAssignmentViewModel();
+            CreateCourse = new CreateCourseViewModel();
+
+
             //Movies = new MoviesViewModel();
 
         }
-    }
+}
 }
