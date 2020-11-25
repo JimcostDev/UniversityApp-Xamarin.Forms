@@ -12,18 +12,13 @@ namespace UniversityApp.ViewModels
     public class CreateInstructorViewModel : BaseViewModel
     {
         private BL.Services.IInstructorService instructortService;
-        private int instructorID;
         private string lastName;
         private string firstMidName;
         private DateTime hireDate;
         private bool isEnabled;
         private bool isRunning;
 
-        public int InstructorID
-        {
-            get { return this.instructorID; }
-            set { this.SetValue(ref this.instructorID, value); }
-        }
+        
 
         public string LastName
         {
@@ -94,7 +89,6 @@ namespace UniversityApp.ViewModels
 
                 await Application.Current.MainPage.DisplayAlert("Message", "The process is successful", "Cancel");
 
-                this.InstructorID = 0;
                 this.LastName = string.Empty;
                 this.FirstMidName = string.Empty;
                 this.HireDate = DateTime.UtcNow;

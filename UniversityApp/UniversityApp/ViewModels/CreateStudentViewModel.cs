@@ -10,18 +10,13 @@ namespace UniversityApp.ViewModels
     public class CreateStudentViewModel : BaseViewModel
     {
         private BL.Services.IStudentService studentService;
-        private int studentID;
         private string lastName;
         private string firstMidName;
         private DateTime enrollmentDate;
         private bool isEnabled;
         private bool isRunning;
 
-        public int StudentID
-        {
-            get { return this.studentID; }
-            set { this.SetValue(ref this.studentID, value); }
-        }
+        
 
         public string LastName
         {
@@ -84,7 +79,7 @@ namespace UniversityApp.ViewModels
                     return;
                 }
 
-                var studentDTO = new StudentDTO { ID = this.StudentID, LastName = this.LastName, FirstMidName = this.FirstMidName, EnrollmentDate = this.EnrollmentDate };
+                var studentDTO = new StudentDTO { LastName = this.LastName, FirstMidName = this.FirstMidName, EnrollmentDate = this.EnrollmentDate };
                 await studentService.Create(Endpoints.POST_STUDENTS, studentDTO);
 
                 this.IsRunning = false;
@@ -92,7 +87,6 @@ namespace UniversityApp.ViewModels
 
                 await Application.Current.MainPage.DisplayAlert("Message", "The process is successful", "Cancel");
 
-                this.StudentID = 0;
                 this.LastName = string.Empty;
                 this.FirstMidName = string.Empty;
                 this.EnrollmentDate = DateTime.UtcNow;

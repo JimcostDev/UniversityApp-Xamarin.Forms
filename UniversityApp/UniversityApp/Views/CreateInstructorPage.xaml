@@ -18,25 +18,21 @@
                         <ColumnDefinition Width="2*"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
 
-                    <Label Text="ID" Grid.Row="0" Grid.Column="0" VerticalOptions="Center"></Label>
-                    <Entry Keyboard="Numeric" 
-                       Grid.Row="0" 
-                       Grid.Column="1"
-                       Text="{Binding InstructorID}"></Entry>
+                    
 
-                    <Label Text="LastName" Grid.Row="1" Grid.Column="0" VerticalOptions="Center"></Label>
-                    <Entry Grid.Row="1" 
+                    <Label Text="LastName" Grid.Row="0" Grid.Column="0" VerticalOptions="Center"></Label>
+                    <Entry Grid.Row="0" 
                        Grid.Column="1"
                        Text="{Binding LastName}"></Entry>
 
-                    <Label Text="FirstMidName" Grid.Row="2" Grid.Column="0" VerticalOptions="Center"></Label>
-                    <Entry Grid.Row="2" 
+                    <Label Text="FirstMidName" Grid.Row="1" Grid.Column="0" VerticalOptions="Center"></Label>
+                    <Entry Grid.Row="1" 
                        Grid.Column="1"
                        Text="{Binding FirstMidName}"></Entry>
 
-                    <Label Text="HireDate" Grid.Row="3" Grid.Column="0" VerticalOptions="Center"></Label>
+                    <Label Text="HireDate" Grid.Row="2" Grid.Column="0" VerticalOptions="Center"></Label>
                     <DatePicker 
-                        Grid.Row="3" 
+                        Grid.Row="2" 
                         Grid.Column="1" 
                         Format="yyyy-MM-dd" 
                         Date="{Binding HireDate}"></DatePicker>

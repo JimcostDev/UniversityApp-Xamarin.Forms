@@ -57,7 +57,7 @@ namespace UniversityApp.ViewModels
                 this.IsRunning = true;
                 this.IsEnabled = false;
 
-                if (this.Email.Equals("dsantafe@utap.edu.co") && this.Password.Equals("123456"))
+                if (this.Email.Equals("rjak727@gmail.com") && this.Password.Equals("123456"))
                     Application.Current.MainPage = new NavigationPage(new HomePage());
                 else
                     await Application.Current.MainPage.DisplayAlert("Error", "Email or Password incorrect", "Cancel");
