@@ -136,4 +136,13 @@
       <Name>UniversityApp</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\logo_utap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\student.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\instructor.png" />
+  </ItemGroup>
 </Project>
