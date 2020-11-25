@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UniversityApp.BL.DTOs;
@@ -15,6 +16,18 @@ namespace UniversityApp.ViewModels
         private BL.Services.IStudentService studentService;
         private ObservableCollection<StudentDTO> students;
         private bool isRefreshing;
+        private string filter;
+        private List<StudentDTO> AllStudents { get; set; }
+
+        public string Filter
+        {
+            get { return this.filter; }
+            set
+            {
+                this.SetValue(ref this.filter, value);
+                this.GetStudentsByName();
+            }
+        }
 
         public ObservableCollection<StudentDTO> Students
         {
@@ -60,6 +73,15 @@ namespace UniversityApp.ViewModels
                 this.IsRefreshing = false;
                 await Application.Current.MainPage.DisplayAlert("Error", ex.Message, "Cancel");
             }
+        }
+        void GetStudentsByName()
+        {
+            var listStudents = this.AllStudents;
+            if (!string.IsNullOrEmpty(this.Filter))
+                listStudents = listStudents.Where(x => x.LastName.ToLower().Contains(this.Filter.ToLower()) ||
+                                                                       x.FirstMidName.ToLower().Contains(this.Filter.ToLower())).ToList();
+
+            this.Students = new ObservableCollection<StudentDTO>(listStudents);
         }
     }
 }

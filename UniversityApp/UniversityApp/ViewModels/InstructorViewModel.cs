@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UniversityApp.BL.DTOs;
@@ -15,6 +16,17 @@ namespace UniversityApp.ViewModels
         private BL.Services.IInstructorService instructorService;
         private ObservableCollection<InstructorDTO> instructors;
         private bool isRefreshing;
+        private string filter;
+        private List<InstructorDTO> AllInstructors{ get; set; }
+        public string Filter
+        {
+            get { return this.filter; }
+            set
+            {
+                this.SetValue(ref this.filter, value);
+                this.GetInstructorsByName();
+            }
+        }
 
         public ObservableCollection<InstructorDTO> Instructors
         {
@@ -60,6 +72,15 @@ namespace UniversityApp.ViewModels
                 this.IsRefreshing = false;
                 await Application.Current.MainPage.DisplayAlert("Error", ex.Message, "Cancel");
             }
+        }
+        void GetInstructorsByName()
+        {
+            var listInstructors = this.AllInstructors;
+            if (!string.IsNullOrEmpty(this.Filter))
+                listInstructors = listInstructors.Where(x => x.LastName.ToLower().Contains(this.Filter.ToLower()) ||
+                                                                       x.FirstMidName.ToLower().Contains(this.Filter.ToLower())).ToList();
+
+            this.Instructors = new ObservableCollection<InstructorDTO>(listInstructors);
         }
     }
 }

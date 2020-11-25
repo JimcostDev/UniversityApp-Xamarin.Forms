@@ -14,6 +14,7 @@
         public CreateStudentViewModel CreateStudent { get; set; }
         public CreateInstructorViewModel CreateInstructor { get; set; }
         public LoginViewModel Login { get; set; }
+        public HomeViewModel Home { get; set; }
 
 
         public MainViewModel()
@@ -29,6 +30,8 @@
             CreateStudent = new CreateStudentViewModel();
             CreateInstructor = new CreateInstructorViewModel();
             Login = new LoginViewModel();
+            Home = new HomeViewModel();
+
             //Movies = new MoviesViewModel();
 
         }
