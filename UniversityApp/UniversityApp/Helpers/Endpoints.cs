@@ -33,6 +33,7 @@ namespace UniversityApp.Helpers
 
         #region Instructors
         public static string GET_INSTRUCTORS = "/api/Instructors/GetInstructors/";
+        public static string POST_INSTRUCTORS = "/api/Instructors/";
         #endregion
 
         #region Enrollments

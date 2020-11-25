@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 using System.Threading.Tasks;
 using UniversityApp.BL.DTOs;
 using UniversityApp.BL.Services.Implements;
@@ -7,20 +9,20 @@ using Xamarin.Forms;
 
 namespace UniversityApp.ViewModels
 {
-    public class CreateStudentViewModel : BaseViewModel
+    public class CreateInstructorViewModel : BaseViewModel
     {
-        private BL.Services.IStudentService studentService;
-        private int studentID;
+        private BL.Services.IInstructorService instructortService;
+        private int instructorID;
         private string lastName;
         private string firstMidName;
-        private DateTime enrollmentDate;
+        private DateTime hireDate;
         private bool isEnabled;
         private bool isRunning;
 
-        public int StudentID
+        public int InstructorID
         {
-            get { return this.studentID; }
-            set { this.SetValue(ref this.studentID, value); }
+            get { return this.instructorID; }
+            set { this.SetValue(ref this.instructorID, value); }
         }
 
         public string LastName
@@ -34,10 +36,10 @@ namespace UniversityApp.ViewModels
             get { return this.firstMidName; }
             set { this.SetValue(ref this.firstMidName, value); }
         }
-        public DateTime EnrollmentDate
+        public DateTime HireDate
         {
-            get { return this.enrollmentDate; }
-            set { this.SetValue(ref this.enrollmentDate, value); }
+            get { return this.hireDate; }
+            set { this.SetValue(ref this.hireDate, value); }
         }
         public bool IsEnabled
         {
@@ -50,10 +52,10 @@ namespace UniversityApp.ViewModels
             set { this.SetValue(ref this.isRunning, value); }
         }
 
-        public CreateStudentViewModel()
+        public CreateInstructorViewModel()
         {
-            this.studentService = new StudentService();
-            this.SaveCommand = new Command(async () => await CreateStudent());
+            this.instructortService = new InstructorService();
+            this.SaveCommand = new Command(async () => await CreateInstructor());
 
             this.IsRunning = false;
             this.IsEnabled = true;
@@ -61,11 +63,11 @@ namespace UniversityApp.ViewModels
 
         public Command SaveCommand { get; set; }
 
-        async Task CreateStudent()
+        async Task CreateInstructor()
         {
             try
             {
-                if (string.IsNullOrEmpty(this.LastName)|| string.IsNullOrEmpty(this.FirstMidName))
+                if (string.IsNullOrEmpty(this.LastName) || string.IsNullOrEmpty(this.FirstMidName))
                 {
                     await Application.Current.MainPage.DisplayAlert("Error", "You must enter the field LastName or FirstMidName", "Cancel");
                     return;
@@ -74,7 +76,7 @@ namespace UniversityApp.ViewModels
                 this.IsRunning = true;
                 this.IsEnabled = false;
 
-                var connection = await studentService.CheckConnection();
+                var connection = await instructortService.CheckConnection();
                 if (!connection)
                 {
                     this.IsRunning = false;
@@ -84,20 +86,20 @@ namespace UniversityApp.ViewModels
                     return;
                 }
 
-                var studentDTO = new StudentDTO { ID = this.StudentID, LastName = this.LastName, FirstMidName = this.FirstMidName, EnrollmentDate = this.EnrollmentDate };
-                await studentService.Create(Endpoints.POST_STUDENTS, studentDTO);
+                var instructorDTO = new InstructorDTO {  LastName = this.LastName, FirstMidName = this.FirstMidName, HireDate = this.HireDate };
+                await instructortService.Create(Endpoints.POST_INSTRUCTORS, instructorDTO);
 
                 this.IsRunning = false;
                 this.IsEnabled = true;
 
                 await Application.Current.MainPage.DisplayAlert("Message", "The process is successful", "Cancel");
 
-                this.StudentID = 0;
+                this.InstructorID = 0;
                 this.LastName = string.Empty;
                 this.FirstMidName = string.Empty;
-                this.EnrollmentDate = DateTime.UtcNow;
+                this.HireDate = DateTime.UtcNow;
                 //Application.Current.MainPage = new NavigationPage(new CoursePage());
-              
+
 
             }
             catch (Exception ex)

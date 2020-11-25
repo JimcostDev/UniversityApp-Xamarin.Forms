@@ -12,6 +12,8 @@
         public OfficeAssignmentViewModel OfficeAssignments { get; set; }
         public CreateCourseViewModel CreateCourse { get; set; }
         public CreateStudentViewModel CreateStudent { get; set; }
+        public CreateInstructorViewModel CreateInstructor { get; set; }
+
 
         public MainViewModel()
         {
@@ -23,7 +25,8 @@
             Enrollments = new EnrollmentViewModel();
             OfficeAssignments = new OfficeAssignmentViewModel();
             CreateCourse = new CreateCourseViewModel();
-            CreateStudent = new CreateStudentViewModel(); 
+            CreateStudent = new CreateStudentViewModel();
+            CreateInstructor = new CreateInstructorViewModel();
 
 
             //Movies = new MoviesViewModel();
