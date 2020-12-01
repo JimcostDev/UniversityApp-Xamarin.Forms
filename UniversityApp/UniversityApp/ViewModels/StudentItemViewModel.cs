@@ -44,10 +44,10 @@ namespace UniversityApp.ViewModels
             await studentService.Delete(Endpoints.DELETE_STUDENTS, this.ID);
 
             await Application.Current.MainPage.DisplayAlert("Message", "The process is successful", "Cancel");
-            var studentViewModel = StudentsViewModel.GetInstance();
-            var studentDeleted = StudentsViewModel.AllStudents.FirstOrDefault(x => x.ID == this.ID);
-            studentViewModel.AllStudents.Remove(studentDeleted);
-            studentViewModel.GetStudentsByName();
+            //var studentViewModel = StudentsViewModel.GetInstance();
+            //var studentDeleted = StudentsViewModel.AllStudents.FirstOrDefault(x => x.ID == this.ID);
+            //studentViewModel.AllStudents.Remove(studentDeleted);
+            //studentViewModel.GetStudentsByName();
         }
     }
 }

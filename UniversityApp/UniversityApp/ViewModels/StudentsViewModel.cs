@@ -75,6 +75,7 @@ namespace UniversityApp.ViewModels
                 }
 
                 var listStudents = (await studentService.GetAll(Endpoints.GET_STUDENTS)).Select(x => ToStudentItemViewModel(x));
+                this.AllStudents = listStudents.ToList();
                 this.Students = new ObservableCollection<StudentItemViewModel>(listStudents);
                 this.IsRefreshing = false;
             }

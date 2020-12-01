@@ -40,6 +40,7 @@ namespace UniversityApp.ViewModels
             Home = new HomeViewModel();
 
             CreateStudentCommand = new Command(async () => await GoToCreateStudent());
+            CreateInstructorCommand = new Command(async () => await GoToCreateInstructor());
 
             //Movies = new MoviesViewModel();
         }
@@ -56,6 +57,12 @@ namespace UniversityApp.ViewModels
         async Task GoToCreateStudent()
         {
             await Application.Current.MainPage.Navigation.PushAsync(new CreateStudentPage());
+        }
+
+        public Command CreateInstructorCommand { get; set; }
+        async Task GoToCreateInstructor()
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new CreateInstructorPage());
         }
     }
 }

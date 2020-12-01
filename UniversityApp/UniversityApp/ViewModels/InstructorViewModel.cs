@@ -64,6 +64,7 @@ namespace UniversityApp.ViewModels
                 }
 
                 var listInstructors = await instructorService.GetAll(Endpoints.GET_STUDENTS);
+                this.AllInstructors = listInstructors.ToList();
                 this.Instructors = new ObservableCollection<InstructorDTO>(listInstructors);
                 this.IsRefreshing = false;
             }
