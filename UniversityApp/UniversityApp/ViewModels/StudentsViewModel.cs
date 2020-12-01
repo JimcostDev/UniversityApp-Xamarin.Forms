@@ -14,10 +14,10 @@ namespace UniversityApp.ViewModels
     public class StudentsViewModel : BaseViewModel
     {
         private BL.Services.IStudentService studentService;
-        private ObservableCollection<StudentDTO> students;
+        private ObservableCollection<StudentItemViewModel> students;
         private bool isRefreshing;
         private string filter;
-        private List<StudentDTO> AllStudents { get; set; }
+        public List<StudentItemViewModel> AllStudents { get; set; }
 
         public string Filter
         {
@@ -29,7 +29,7 @@ namespace UniversityApp.ViewModels
             }
         }
 
-        public ObservableCollection<StudentDTO> Students
+        public ObservableCollection<StudentItemViewModel> Students
         {
             get { return this.students; }
             set { this.SetValue(ref this.students, value); }
@@ -43,9 +43,19 @@ namespace UniversityApp.ViewModels
 
         public StudentsViewModel()
         {
+            instance = this;
             this.studentService = new StudentService();
             this.RefreshCommand = new Command(async () => await GetStudents());
             this.RefreshCommand.Execute(null);
+        }
+
+        private static StudentsViewModel instance;
+        public static StudentsViewModel GetInstance()
+        {
+            if (instance == null)
+                return new StudentsViewModel();
+
+            return instance;
         }
 
         public Command RefreshCommand { get; set; }
@@ -64,8 +74,8 @@ namespace UniversityApp.ViewModels
                     return;
                 }
 
-                var listStudents = await studentService.GetAll(Endpoints.GET_STUDENTS);
-                this.Students = new ObservableCollection<StudentDTO>(listStudents);
+                var listStudents = (await studentService.GetAll(Endpoints.GET_STUDENTS)).Select(x => ToStudentItemViewModel(x));
+                this.Students = new ObservableCollection<StudentItemViewModel>(listStudents);
                 this.IsRefreshing = false;
             }
             catch (Exception ex)
@@ -74,14 +84,22 @@ namespace UniversityApp.ViewModels
                 await Application.Current.MainPage.DisplayAlert("Error", ex.Message, "Cancel");
             }
         }
-        void GetStudentsByName()
+
+        private StudentItemViewModel ToStudentItemViewModel(StudentDTO studentDTO) => new StudentItemViewModel
+        {
+            ID = studentDTO.ID,
+            LastName = studentDTO.LastName,
+            FirstMidName = studentDTO.FirstMidName,
+            EnrollmentDate = studentDTO.EnrollmentDate
+        };
+        public void GetStudentsByName()
         {
             var listStudents = this.AllStudents;
             if (!string.IsNullOrEmpty(this.Filter))
                 listStudents = listStudents.Where(x => x.LastName.ToLower().Contains(this.Filter.ToLower()) ||
                                                                        x.FirstMidName.ToLower().Contains(this.Filter.ToLower())).ToList();
 
-            this.Students = new ObservableCollection<StudentDTO>(listStudents);
+            this.Students = new ObservableCollection<StudentItemViewModel>(listStudents);
         }
     }
 }

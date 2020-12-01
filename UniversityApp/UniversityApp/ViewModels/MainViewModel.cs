@@ -20,9 +20,12 @@ namespace UniversityApp.ViewModels
         public LoginViewModel Login { get; set; }
         public HomeViewModel Home { get; set; }
 
+        public EditStudentViewModel EditStudent { get; set; }
+
 
         public MainViewModel()
         {
+            instance = this;
             Courses = new CourseViewModel();
             CourseInstructors = new CourseInstructorsViewModel();
             Students = new StudentsViewModel();
@@ -39,6 +42,15 @@ namespace UniversityApp.ViewModels
             CreateStudentCommand = new Command(async () => await GoToCreateStudent());
 
             //Movies = new MoviesViewModel();
+        }
+
+        private static MainViewModel instance;
+        public static MainViewModel GetInstance()
+        {
+            if (instance == null)
+                return new MainViewModel();
+
+            return instance;
         }
         public Command CreateStudentCommand { get; set; }
         async Task GoToCreateStudent()

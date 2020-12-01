@@ -10,7 +10,7 @@ namespace UniversityApp.BL.DTOs
     public class CourseDTO
     {
         [JsonProperty("CourseID")]
-        public long CourseID { get; set; }
+        public int CourseID { get; set; }
 
         [JsonProperty("Title")]
         public string Title { get; set; }

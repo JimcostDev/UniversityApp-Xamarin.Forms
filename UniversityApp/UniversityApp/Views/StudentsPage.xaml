@@ -21,13 +21,17 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
+                            
                             <Grid>
+                                <Grid.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding EditStudentCommand}"></TapGestureRecognizer>
+                                </Grid.GestureRecognizers>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="2*"></ColumnDefinition>
                                     <ColumnDefinition Width="*"></ColumnDefinition>
                                 </Grid.ColumnDefinitions>
                                 <Label Grid.Column="0" Text="{Binding LastName }"></Label>
-                                <Label Grid.Column="1" Text="{Binding FirstMidName }"></Label>
+                                <ImageButton Grid.Column="1" Source="ic_action_delete_forever" Command="{Binding DeleteCourseCommand}" BackgroundColor="Transparent"></ImageButton>
                             </Grid>
                         </ViewCell>
                     </DataTemplate>
