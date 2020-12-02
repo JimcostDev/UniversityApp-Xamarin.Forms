@@ -72,7 +72,7 @@ namespace UniversityApp.ViewModels
                     return;
                 }
 
-                var listInstructors = (await instructorService.GetAll(Endpoints.GET_STUDENTS)).Select(x => ToInstructorItemViewModel(x)); ;
+                var listInstructors = (await instructorService.GetAll(Endpoints.GET_INSTRUCTORS)).Select(x => ToInstructorItemViewModel(x)); ;
                 this.AllInstructors = listInstructors.ToList();
                 this.Instructors = new ObservableCollection<InstructorItemViewModel>(listInstructors);
                 this.IsRefreshing = false;
