@@ -14,10 +14,10 @@ namespace UniversityApp.ViewModels
     public class InstructorViewModel : BaseViewModel
     {
         private BL.Services.IInstructorService instructorService;
-        private ObservableCollection<InstructorDTO> instructors;
+        private ObservableCollection<InstructorItemViewModel> instructors;
         private bool isRefreshing;
         private string filter;
-        private List<InstructorDTO> AllInstructors{ get; set; }
+        public List<InstructorItemViewModel> AllInstructors{ get; set; }
         public string Filter
         {
             get { return this.filter; }
@@ -28,7 +28,7 @@ namespace UniversityApp.ViewModels
             }
         }
 
-        public ObservableCollection<InstructorDTO> Instructors
+        public ObservableCollection<InstructorItemViewModel> Instructors
         {
             get { return this.instructors; }
             set { this.SetValue(ref this.instructors, value); }
@@ -42,9 +42,18 @@ namespace UniversityApp.ViewModels
 
         public InstructorViewModel()
         {
+            instance = this;
             this.instructorService = new InstructorService();
             this.RefreshCommand = new Command(async () => await GetInstructors());
             this.RefreshCommand.Execute(null);
+        }
+        private static InstructorViewModel instance;
+        public static InstructorViewModel GetInstance()
+        {
+            if (instance == null)
+                return new InstructorViewModel();
+
+            return instance;
         }
 
         public Command RefreshCommand { get; set; }
@@ -63,9 +72,9 @@ namespace UniversityApp.ViewModels
                     return;
                 }
 
-                var listInstructors = await instructorService.GetAll(Endpoints.GET_STUDENTS);
+                var listInstructors = (await instructorService.GetAll(Endpoints.GET_STUDENTS)).Select(x => ToInstructorItemViewModel(x)); ;
                 this.AllInstructors = listInstructors.ToList();
-                this.Instructors = new ObservableCollection<InstructorDTO>(listInstructors);
+                this.Instructors = new ObservableCollection<InstructorItemViewModel>(listInstructors);
                 this.IsRefreshing = false;
             }
             catch (Exception ex)
@@ -74,14 +83,21 @@ namespace UniversityApp.ViewModels
                 await Application.Current.MainPage.DisplayAlert("Error", ex.Message, "Cancel");
             }
         }
-        void GetInstructorsByName()
+        private InstructorItemViewModel ToInstructorItemViewModel(InstructorDTO instructortDTO) => new InstructorItemViewModel
+        {
+            ID = instructortDTO.ID,
+            LastName = instructortDTO.LastName,
+            FirstMidName = instructortDTO.FirstMidName,
+            HireDate = instructortDTO.HireDate
+        };
+        public void GetInstructorsByName()
         {
             var listInstructors = this.AllInstructors;
             if (!string.IsNullOrEmpty(this.Filter))
                 listInstructors = listInstructors.Where(x => x.LastName.ToLower().Contains(this.Filter.ToLower()) ||
                                                                        x.FirstMidName.ToLower().Contains(this.Filter.ToLower())).ToList();
 
-            this.Instructors = new ObservableCollection<InstructorDTO>(listInstructors);
+            this.Instructors = new ObservableCollection<InstructorItemViewModel>(listInstructors);
         }
     }
 }

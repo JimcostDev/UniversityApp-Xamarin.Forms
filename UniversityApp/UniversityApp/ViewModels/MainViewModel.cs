@@ -21,6 +21,7 @@ namespace UniversityApp.ViewModels
         public HomeViewModel Home { get; set; }
 
         public EditStudentViewModel EditStudent { get; set; }
+        public EditInstructorViewModel EditInstructor { get; set; }
 
 
         public MainViewModel()
