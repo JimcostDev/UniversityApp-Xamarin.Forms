@@ -68,19 +68,13 @@ namespace UniversityApp.ViewModels
                     return;
                 }
 
-                var studentDTO = new StudentDTO { LastName = this.Student.LastName, FirstMidName = this.Student.FirstMidName, EnrollmentDate = this.Student.EnrollmentDate };
+                var studentDTO = new StudentDTO { ID = this.Student.ID, LastName = this.Student.LastName, FirstMidName = this.Student.FirstMidName, EnrollmentDate = this.Student.EnrollmentDate };
                 await studentService.Update(Endpoints.PUT_STUDENTS, this.Student.ID, studentDTO);
 
                 this.IsRunning = false;
                 this.IsEnabled = true;
 
                 await Application.Current.MainPage.DisplayAlert("Message", "The process is successful", "Cancel");
-
-                this.Student.ID = 0;
-                this.Student.LastName = string.Empty;
-                this.Student.FirstMidName = string.Empty;
-                this.Student.EnrollmentDate = DateTime.UtcNow;
-
 
                 await Application.Current.MainPage.Navigation.PopAsync();
             }
