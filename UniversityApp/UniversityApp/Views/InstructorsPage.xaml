@@ -9,7 +9,7 @@
     <ContentPage.Content>
         <StackLayout BindingContext="{Binding Instructors}" Padding="20">
             
-            <SearchBar Placeholder="Search students"
+            <SearchBar Placeholder="Search instructors"
                        HeightRequest="30"
                        Text="{Binding Filter}"></SearchBar>
             
@@ -22,6 +22,9 @@
                     <DataTemplate>
                         <ViewCell>
                             <Grid>
+                                <Grid.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding EditInstructorCommand}"></TapGestureRecognizer>
+                                </Grid.GestureRecognizers>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="2*"></ColumnDefinition>
                                     <ColumnDefinition Width="*"></ColumnDefinition>
